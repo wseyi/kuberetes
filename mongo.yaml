@@ -19,23 +19,17 @@ spec:
         image: mongo:7.0-rc-jammy
         ports:
         - containerPort: 27017
-        limits:
-        memory: 512Mi
-        cpu: "1"
-      requests:
-        memory: 256Mi
-        cpu: "0.2"
-      env:
-      - name: MONGO_INITDB_ROOT_USERNAME
-        valueFrom:
-          secretKeyRef:
-            name: mongo-secret
-            key: mongo-user
-      - name: MONGO_INITDB_ROOT_PASSWORD
-        valueFrom:
-          secretKeyRef:
-            name: mongo-secret
-            key: mongo-password     
+        env:
+        - name: MONGO_INITDB_ROOT_USERNAME
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-user
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              name: mongo-secret
+              key: mongo-password     
 ---
 apiVersion: v1
 kind: Service
