@@ -19,6 +19,7 @@ Start minikube in a docker container
 
 Check the status of minikube
 * `$ minikube status`
+
 Get the ip address of minikube
 * `$ minikube ip` 
 
