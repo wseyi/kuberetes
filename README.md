@@ -11,8 +11,8 @@
 │  └─ webapp.yaml
 
 **Dependencies**
--[Minikube](https://https://minikube.sigs.k8s.io/docs/start/)
--[Kubectl](https://https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+-[Minikube](https://https://www.minikube.sigs.k8s.io/docs/start/)
+-[Kubectl](https://https://www.kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
 
 Start minikube in a docker container
 `$ minikube start --driver docker`
