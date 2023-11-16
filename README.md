@@ -39,7 +39,7 @@ Get basic information
 * `$ kubectl get all`
 
 Check if the web app is running
-* Enter the ip address of minikube and the port number of webapp. E.g - 192.***.**.*:30100
+* Enter the ip address of minikube and the port number of webapp. E.g - 192.???.??.?:30100
 
 If you can't access the NodePort service webapp with **`MinikubeIP:NodePort`**, execute the following command:
     
